@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width:50%;
+    border-collapse: collapse;
+    margin: 20px ;
+}
+th,td {
+    background-color: #07d82d;
+    border: 2px solid #050505;
+    padding: 8px;
+}
+th {
+    background-color: #1905f4f7;
+}
+body{
+  
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center
+}
+button{
+    background-color: #08d0df;
+}
+button:hover{
+    background-color: rgb(53, 19, 244);
+}
+img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+}
+
+.bl{
+    margin-bottom: 10px;
+}
