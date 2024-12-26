@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Bookings</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="managerviewbooking.css">
+  
+</head>
+<body>
+  <!-- <nav class="navbar">
+    <div class="logo">Turf Manager</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </nav> -->
+
+  <div class="container">
+    <h1>View and Manage Turf Bookings</h1>
+
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search bookings...">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Booking ID</th>
+          <th>Customer Name</th>
+          <th>Turf Name</th>
+          <th>Date</th>
+          <th>Time Slot</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#001</td>
+          <td>ajas</td>
+          <td>pdm Turf</td>
+          <td>2024-12-15</td>
+          <td>10:00 AM - 12:00 PM</td>
+          <td>Pending</td>
+          <td class="actions">
+            <button>View</button>
+            <button>Cancel</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#002</td>
+          <td> fasal</td>
+          <td>26 Turf</td>
+          <td>2024-12-16</td>
+          <td>2:00 PM - 4:00 PM</td>
+          <td>Pending</td>
+          <td class="actions">
+            <button>View</button>
+            <button>Cancel</button>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

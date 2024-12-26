@@ -1,0 +1,146 @@
+*{
+    text-decoration: none;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+   
+  }
+ 
+  /* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #000000; /* Teal background */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .nav-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .back-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #008080;
+    background-color: white;
+    border: 2px solid #008080;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .back-button:hover {
+    background-color: #b5d6d6; /* Darker teal */
+    color: white;
+    border-color: #b5d6d6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  /* Action Bar */
+  .action-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Turf Table */
+  .turf-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .turf-table thead th {
+    background-color: #008080;
+    color: #fff;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .turf-table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .turf-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .turf-table tbody tr:hover {
+    background-color: #e0f7fa;
+  }
+  
+  /* Action Buttons */
+  .approve-button,
+  .reject-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .approve-button {
+    background-color: #27ae60;
+    color: #fff;
+  }
+  
+  .approve-button:hover {
+    background-color: #1e8449;
+  }
+  
+  .reject-button {
+    background-color: #e74c3c;
+    color: #fff;
+    margin-left: 8px;
+  }
+  
+  .reject-button:hover {
+    background-color: #c0392b;
+  }
+  

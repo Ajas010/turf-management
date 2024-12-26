@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .arrow-btn{
+    background-color: #142b15;
+    color: white;
+    line-height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTER</h1>
+        <form method="post" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="turf_name"><b>Turf Name:</b></label>
+            <input type="text" id="turf_name" name="name" required>
+
+            <label for="owner_name"><b>Owner Name:</b></label>
+            <input type="text" id="owner_name" name="ownername" required>
+
+            <label for="gender"><b>Gender:</b></label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone"><b>Phone No:</b></label>
+            <input type="text" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="location"><b>Location:</b></label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="openingtime">Opening Time:</label>
+            <input type="text" id="openingtime" name="openingtime" required>
+
+            <label for="closingtime">Closing Time:</label>
+            <input type="text" id="closingtime" name="closingtime" required>
+
+            <label for="slots"><i class="fa-regular fa-clock"></i> Add Time Slots:</label>
+            <div id="slot-container" style="position: relative;">
+                <div class="slot-input" style="display: flex; align-items: center;">
+                    <input type="text" name="slots" placeholder="Enter Slot (e.g., 9:00-10:00)" required>
+                    <button type="button" id="add-slot-button" class="arrow-btn">add</button>
+                </div>
+            </div>
+
+            <label for="username"><b>Username:</b></label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('add-slot-button').addEventListener('click', function () {
+            var container = document.getElementById('slot-container');
+            var newInput = document.createElement('div');
+            newInput.classList.add('slot-input');
+            newInput.innerHTML = '<input type="text" name="slots" placeholder="Enter Slot (e.g., 9:00-10:00)" required>';
+            container.appendChild(newInput);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #2a2f54;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2a2f54;
+    color: white;
+}
+
+.actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #3498db;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #40637a;
+}

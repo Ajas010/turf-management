@@ -1,0 +1,98 @@
+body{
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+
+.navbar {
+background-color: #2a2f54;
+color: white;
+padding: 15px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar .logo {
+font-size: 20px;
+font-weight: bold;
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+.navbar ul li {
+margin-left: 20px;
+}
+
+.navbar ul li a {
+color: white;
+text-decoration: none;
+}
+
+.container {
+max-width: 1200px;
+margin: 20px auto;
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+text-align: center;
+color: #2a2f54;
+margin-bottom: 20px;
+}
+
+.search-bar {
+display: flex;
+justify-content: flex-end;
+margin-bottom: 20px;
+}
+
+.search-bar input {
+padding: 8px;
+width: 300px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+
+table th, table td {
+border: 1px solid #ddd;
+padding: 12px;
+text-align: left;
+}
+
+table th {
+background-color: #2a2f54;
+color: white;
+}
+
+table tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+.actions button {
+background-color: #3498db;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.actions button:hover {
+background-color: #40637a;
+}

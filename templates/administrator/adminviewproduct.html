@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turf Products List</title>
+    <link rel="stylesheet" href="{% static 'css/adminviewproduct.css' %}">
+      
+    
+</head>
+<body>
+     <!-- Navigation Bar -->
+
+    <div>
+  <nav class="navbar">
+    <div class="nav-title">TURF ADMIN</div>
+    <button class="back-button"><a href="dashboard.html">Back</a></button>
+  </nav></div>
+
+<div class="container">
+    
+    <table>
+        <h1>List of Products</h1>
+    
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Product Count</th>
+                <th>Available Turf</th>
+                <th>Price (₹)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://via.placeholder.com/50" alt="Soccer Ball"></td>
+                <td>Soccer Ball</td>
+                <td>100</td>
+                <td>Turf A</td>
+                <td>₹1,200</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/50" alt="Football Cleats"></td>
+                <td>Football Cleats</td>
+                <td>50</td>
+                <td>Turf B</td>
+                <td>₹4,000</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/50" alt="Goal Net"></td>
+                <td>Goal Net</td>
+                <td>200</td>
+                <td>Turf C</td>
+                <td>₹2,000</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/50" alt="Water Bottle"></td>
+                <td>Water Bottle</td>
+                <td>150</td>
+                <td>Turf A</td>
+                <td>₹800</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/50" alt="Shin Guards"></td>
+                <td>Shin Guards</td>
+                <td>75</td>
+                <td>Turf B</td>
+                <td>₹1,000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turf Item Rentals</title>
+    <link rel="stylesheet" href="{% static 'css/adminviewrenting.css' %}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-title">TURF ADMIN</div>
+    <button class="back-button"><a href="dashboard.html">Back</a></button>
+  </nav>
+
+    
+    <div class="container">
+        <table>
+            <h1>Turf Item Rentals</h1>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Item Name</th>
+                    <th>Count</th>
+                    <th>Price (₹)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="ball.jpg" alt="Ball"></td>
+                    <td>Soccer Ball</td>
+                    <td>10</td>
+                    <td>100</td>
+                    <td class="status-available">Available</td>
+                </tr>
+                <tr>
+                    <td><img src="cones.jpg" alt="Cones"></td>
+                    <td>Training Cones</td>
+                    <td>20</td>
+                    <td>50</td>
+                    <td class="status-rented">Rented</td>
+                </tr>
+                <tr>
+                    <td><img src="jersey.jpg" alt="Jersey"></td>
+                    <td>Team Jersey</td>
+                    <td>15</td>
+                    <td>200</td>
+                    <td class="status-available">Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

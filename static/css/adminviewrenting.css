@@ -1,0 +1,70 @@
+*{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+ /* Navigation Bar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 30px;
+background-color: #000000; /* Teal background */
+color: white;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-title {
+font-size: 20px;
+font-weight: bold;
+}
+
+.back-button {
+padding: 8px 16px;
+font-size: 14px;
+color: #008080;
+background-color: white;
+border: 2px solid #008080;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+
+}
+.back-button:hover {
+background-color: #b5d6d6; /* Darker teal */
+color: white;
+border-color: #b5d6d6;
+}
+
+.container {
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+table th {
+    background-color: #008080;
+    color: white;
+}
+img {
+    max-width: 100px;
+    height: auto;
+}
+.status-rented {
+    color: red;
+    font-weight: bold;
+}
+.status-available {
+    color: green;
+    font-weight: bold;
+}

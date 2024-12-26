@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turf Details</title>
+    <link rel="stylesheet" href="{% static 'css/adminviewturf.css' %}">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-title">TURF ADMIN</div>
+    <button class="back-button"><a href="dashboard.html">Back</a></button>
+  </nav>
+
+    <table>
+        <caption>Available Turfs</caption>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Size</th>
+                <th>Price (per hour)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="turf1.jpg" alt="Turf 1"></td>
+                <td>Greenfield Arena</td>
+                <td>Downtown City</td>
+                <td>7-a-Side</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td><img src="turf2.jpg" alt="Turf 2"></td>
+                <td>Sunrise Sports</td>
+                <td>North Avenue</td>
+                <td>5-a-Side</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td><img src="turf3.jpg" alt="Turf 3"></td>
+                <td>Elite Play Park</td>
+                <td>West End</td>
+                <td>11-a-Side</td>
+                <td>$100</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Renting</title>
+    <link rel="stylesheet" href="managerrent.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <div class="logo">Turf Manager</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav> -->
+
+    <div class="container">
+        <h2>View Renting</h2>
+        <p>Keep track of all your earnings and renting history.</p>
+
+        <div class="filters">
+            <input type="date" id="filter-date" placeholder="Filter by Date">
+            <select id="filter-status">
+                <option value="">Filter by Status</option>
+                <option value="rented">Rented</option>
+                <option value="returned">Returned</option>
+                <option value="pending">Pending</option>
+            </select>
+            <button onclick="applyFilters()">Apply Filters</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Date Rented</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Soccer Ball</td>
+                    <td>2024-12-01</td>
+                    <td>Rented</td>
+                    <td class="actions">
+                        <button>View</button>
+                        <button>Mark as Returned</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Tennis Racket</td>
+                    <td>2024-12-05</td>
+                    <td>Pending</td>
+                    <td class="actions">
+                        <button>View</button>
+                        <button>Cancel</button>
+                    </td>
+                </tr>
+                <!-- Additional rows can be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function applyFilters() {
+            const date = document.getElementById('filter-date').value;
+            const status = document.getElementById('filter-status').value;
+            // Logic for filtering rows based on the selected date and status
+            console.log(`Filtering by Date: ${date}, Status: ${status}`);
+        }
+    </script>
+</body>
+</html>

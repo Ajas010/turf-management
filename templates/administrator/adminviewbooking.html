@@ -1,0 +1,194 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Turf Booking</title>
+   <link rel="stylesheet" href="{% static 'css/adminviewbooking.css'%}">
+</head>
+<body>
+
+     <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-title">TURF ADMIN</div>
+    <button class="back-button"><a href="dashboard.html">Back</a></button>
+  </nav>
+
+  
+    <div class="content">
+        <h2>Turf Booking</h2>
+        <div class="scroll-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>PROFILE</th>
+                        <th>PHONE NO.</th>
+                        <th>TURF NAME</th>
+                        <th>TIME</th>
+                        <th>DURATION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example of 20+ bookings -->
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">AJAS</td>
+                        <td>7894561230</td>
+                        <td>TURF ONE</td>
+                        <td>5:00 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">FASAL</td>
+                        <td>1236547899</td>
+                        <td>TURF TWO</td>
+                        <td>6:00 PM</td>
+                        <td>1.5 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">JOEL</td>
+                        <td>1237894560</td>
+                        <td>TURF THREE</td>
+                        <td>7:00 PM</td>
+                        <td>2 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">FAJIS</td>
+                        <td>0123654789</td>
+                        <td>TURF FOUR</td>
+                        <td>8:00 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">RITHAS</td>
+                        <td>0213654789</td>
+                        <td>TURF FIVE</td>
+                        <td>9:00 PM</td>
+                        <td>2 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">MEERA</td>
+                        <td>9876543210</td>
+                        <td>TURF SIX</td>
+                        <td>10:00 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">NAZIR</td>
+                        <td>8765432109</td>
+                        <td>TURF SEVEN</td>
+                        <td>5:30 PM</td>
+                        <td>1.5 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">HARIS</td>
+                        <td>7654321098</td>
+                        <td>TURF EIGHT</td>
+                        <td>6:30 PM</td>
+                        <td>2 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">KHALID</td>
+                        <td>6543210987</td>
+                        <td>TURF NINE</td>
+                        <td>7:30 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">TARIQ</td>
+                        <td>5432109876</td>
+                        <td>TURF TEN</td>
+                        <td>8:30 PM</td>
+                        <td>1.5 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">JAVED</td>
+                        <td>4321098765</td>
+                        <td>TURF ELEVEN</td>
+                        <td>9:30 PM</td>
+                        <td>2 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">SAMIR</td>
+                        <td>3210987654</td>
+                        <td>TURF TWELVE</td>
+                        <td>10:30 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">RAFI</td>
+                        <td>2109876543</td>
+                        <td>TURF THIRTEEN</td>
+                        <td>11:00 PM</td>
+                        <td>2 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">AHMED</td>
+                        <td>1098765432</td>
+                        <td>TURF FOURTEEN</td>
+                        <td>12:00 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">ALI</td>
+                        <td>9876541230</td>
+                        <td>TURF FIFTEEN</td>
+                        <td>1:00 PM</td>
+                        <td>1.5 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">WALEED</td>
+                        <td>8765432101</td>
+                        <td>TURF SIXTEEN</td>
+                        <td>2:00 PM</td>
+                        <td>2 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">SAMI</td>
+                        <td>7654321090</td>
+                        <td>TURF SEVENTEEN</td>
+                        <td>3:00 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">ZAYED</td>
+                        <td>6543210980</td>
+                        <td>TURF EIGHTEEN</td>
+                        <td>4:00 PM</td>
+                        <td>1.5 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">RAHEEL</td>
+                        <td>5432109875</td>
+                        <td>TURF NINETEEN</td>
+                        <td>5:30 PM</td>
+                        <td>2 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">SHARIF</td>
+                        <td>4321098760</td>
+                        <td>TURF TWENTY</td>
+                        <td>6:00 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">OMAR</td>
+                        <td>3210987653</td>
+                        <td>TURF TWENTY ONE</td>
+                        <td>7:00 PM</td>
+                        <td>1 HR</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-icon"><img src="user-icon.png" alt="Profile">IMRAN</td>
+                        <td>2109876542</td>
+                        <td>TURF TWENTY TWO</td>
+                        <td>8:00 PM</td>
+                        <td>1.5 HR</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

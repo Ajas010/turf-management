@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turf Register Table</title>
+  <link rel="stylesheet" href="{% static 'css/adminviewuser.css' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-title">TURF ADMIN</div>
+    <button class="back-button"><a href="dashboard.html">Back</a></button>
+  </nav>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>User details</h1>
+    </header>
+
+    <!-- Add Turf Button -->
+    <div class="action-bar">
+      <button class="add-button">Add Turf</button>
+    </div>
+
+    <!-- Turf Table -->
+    <table class="turf-table">
+      <thead>
+        <tr>
+          <th>Turf ID</th>
+          <th>Turf Name</th>
+          <th>Owner Name</th>
+          <th>gender</th>
+          <th>Address</th>
+          <th> Phone</th>
+          <th> Location</th>
+          <th> Email</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          {% for user in users %}
+              <tr>
+                  <td>{{ forloop.counter }}</td>
+                  <td>{{ user.Name }}</td>
+                  <td>{{ user.OwnerName }}</td>
+                  <td>{{ user.gender }}</td>
+                  <td>{{ user.address }}</td>
+                  <td>{{ user.phone}}</td>
+                  <td>{{ user.location}}</td>
+                  <td>{{ user.email}}</td>
+
+                 
+                 
+                  <td>{{ user.email}}
+          <td>
+            <button class="approve-button">Approve</button>
+            <button class="reject-button">Reject</button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+
