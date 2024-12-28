@@ -6,6 +6,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+class Turfdashboard(View):
+    def get(self, request):
+        username=request.session["username"]
+        print(username)
+        return render(request, 'administrator/managerdashbord.html',{'val':username})
 
 class register(View):
     def get(self, request):
@@ -24,7 +29,8 @@ class register(View):
                 password=password, 
                 user_type='TURF',
             )
-            turf_user.is_active = False 
+            turf_user.is_active = True 
+            turf_user.status = 'ACTIVE'
             turf_user.save()
 
             turf_admin.Loginid = turf_user  

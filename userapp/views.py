@@ -29,13 +29,15 @@ class UserLogin(View):
         response_dict = {"success": False}
         landing_page_url = {
             "ADMIN": "userapp:loadadmin",
-            "TURF": "turfapp:loadturf",
+            "TURF": "loadturf",
            
         }
         username = request.POST.get("username")
+        print(username)
         password = request.POST.get("password")
+        print(password)
         authenticated = authenticate(username=username, password=password)
-        
+        print(authenticated)
         try:
             user = Userprofile.objects.get(username=username)
         except Userprofile.DoesNotExist:
@@ -54,7 +56,7 @@ class UserLogin(View):
         )
 
         user_type = authenticated.user_type
-
+        print("user_type")
         request.session["data"] = {
             "user_id": user.id,
             "user_type": user.user_type,
@@ -65,6 +67,8 @@ class UserLogin(View):
         request.session["user_id"]=user.id
         request.session["user"] = authenticated.username
         request.session["token"] = token.key
+        request.session["username"]=user.username
+    
         request.session["status"] = user.is_active
         return redirect(landing_page_url.get(user_type, "userapp:userlogin"))
     

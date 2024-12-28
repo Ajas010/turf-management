@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>manager Dashboard</title>
-  <link rel="stylesheet" href="managerdashbord.css">
+  <link rel="stylesheet" href="{% static 'css/managerdashbord.css' %}">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +21,7 @@
 
   <div class="dashboard">
     <main>
-      <h2>Welcome, <span class="username">USER</span></h2>
+      <h2>Welcome, <span class="username">{{val}}</span></h2>
       <p>Manage your turf and bookings </p>
       <div class="actions">
       <!-- <div class="card">
@@ -33,19 +34,19 @@
           <i class="fas fa-edit"></i>
           <h3>Manage Products</h3>
           <p>Add and manage sports equipment or products for rent or sale.</p>
-          <a href="manageproduct.html">Manage Products</a>
+          <a href="/adminapp/manageproduct/">Manage Products</a>
         </div>
         <div class="card">
           <i class="fas fa-calendar-alt"></i>
           <h3>View Bookings</h3>
           <p>View and manage all turf bookings in one place.</p>
-          <a href="managerviewbooking.html">View Bookings</a>
+          <a href="/adminapp/managerviewbooking/">View Bookings</a>
         </div>
         <div class="card">
           <i class="fas fa-wallet"></i>
           <h3>View Renting</h3>
           <p>Keep track of all your earnings and renting history.</p>
-          <a href="managerrent.html">View Renting</a>
+          <a href="/adminapp/managerrent/">View Renting</a>
         </div>
       </div>
     </main>

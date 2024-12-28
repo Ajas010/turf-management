@@ -10,6 +10,12 @@ urlpatterns = [
    path('adminviewbooking/',adminviewbooking.as_view(),name='adminviewbooking'),
    path('adminviewproduct/',adminviewproduct.as_view(),name='adminviewproduct'),
    path('adminviewrenting/',adminviewrenting.as_view(),name='adminviewrenting'),
+   #manager
+   path('manageraddproduct/',manageraddproduct.as_view(),name='manageraddproduct'),
+   path('managerviewbooking/',managerviewbooking.as_view(),name='managerviewbooking'),
+   path('managerrent/',managerrent.as_view(),name='managerrent'),
+   path('manageproduct/',manageproduct.as_view(),name='manageproduct'),
+
 
 
 

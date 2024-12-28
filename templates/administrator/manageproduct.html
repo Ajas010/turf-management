@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manage Products</title>
-  <link rel="stylesheet" href="manageproduct.css">
+  <link rel="stylesheet" href="{% static 'css/manageproduct.css' %}">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
     <section id="product-list" class="product-section">
       <h2>Product List</h2>
       <div class="table-header">
-        <a href="addproduct.html" class="add-btn">Add Product</a>
+        <a href="/adminapp/manageraddproduct/" class="add-btn">Add Product</a>
       </div>
       <table class="product-table">
         <thead>

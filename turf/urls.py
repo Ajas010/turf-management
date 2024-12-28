@@ -7,6 +7,7 @@ urlpatterns = [
     path('viewproduct/', Viewproduct.as_view(), name='view_product'),
     path('deleteproduct/<int:id>/', Deleteproduct.as_view(), name='delete_product'),
     path('editproduct/<int:id>/', Editproduct.as_view(), name='edit_product'),
+    path('Turfdashboard',Turfdashboard.as_view(),name='loadturf')
       
    
 ]

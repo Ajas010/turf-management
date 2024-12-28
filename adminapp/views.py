@@ -5,6 +5,7 @@ from turf.models import *
 # Create your views here.
 
 
+
 class AdminTurfApprovalView(View):
     def get(self, request):
         turf_registration = Turfadmin.objects.all()
@@ -44,4 +45,23 @@ class adminviewproduct(View):
 class adminviewrenting(View):
     def get(self,request):
         return render(request,'administrator/adminviewrenting.html')
+    
+class manageproduct(View):
+    def get(self,request):
+        return render(request,'administrator/manageproduct.html')
+    
+class manageraddproduct(View):
+    def get(self,request):
+        return render(request,'administrator/mangeraddproduct.html')
+    
+class managerviewbooking(View):
+    def get(self, request):
+        return render(request,'administrator/managerviewbooking.html')
+    
+class managerrent(View):
+    def get(self, request):
+        return render(request,'administrator/managerrent.html')
+
+        
+
         
